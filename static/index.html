@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoMol</title>
+</head>
+
+<body>
+    <h1>Welcome to nomol</h1>
+    <p>Currently blocking sites:</p>
+    <div>
+        <ul>
+            {{range .Sites}}
+            <li>{{.}}</li>
+            {{end}}
+        </ul>
+    </div>
+    <hr/>
+    <p>To configure nomol, go to your computers proxy setting and set the proxy as 127.0.0.1 with the port 8080</p>
+    <p>To add new sites , edit sites.txt file in the installation folder</p>
+</body>
+
+</html>
